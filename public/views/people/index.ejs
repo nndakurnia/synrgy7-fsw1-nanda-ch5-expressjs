@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta
+      name="viewport"
+      content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width"
+    />
+    <title>People Datas</title>
+  </head>
+  <body>
+    <h1>People Datas</h1>
+    <table border="1">
+      <tr>
+        <th>No</th>
+        <th>Name</th>
+        <th>Username</th>
+        <th>Email</th>
+      </tr>
+      <% people.forEach((person, index) => { %>
+      <tr>
+        <td><%= index + 1 %></td>
+        <td><%= person.name %></td>
+        <td><%= person.username %></td>
+        <td><%= person.email %></td>
+      </tr>
+      <% }) %>
+    </table>
+  </body>
+</html>
