@@ -1,5 +1,3 @@
-const fs = require("fs");
-
 const data = [
   {
     id: 1,

@@ -4,7 +4,7 @@ const cloudinary = require("../middlewares/cloudinary");
 // GET /people/
 // GET /people?name=Leanne
 const getPeople = (req, res) => {
-  userQuery = req.query.name;
+  const userQuery = req.query.name;
 
   if (userQuery) {
     const filteredData = data.filter((row) =>
